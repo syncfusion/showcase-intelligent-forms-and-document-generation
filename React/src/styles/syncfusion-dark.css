@@ -1,0 +1,19 @@
+/**
+ * Syncfusion material3 *dark* theme. Loaded as a standalone stylesheet and
+ * injected/toggled by src/theme/useTheme.ts (imported there with ?url), so the
+ * manual light/dark switch controls Syncfusion chrome the same way it controls
+ * our own tokens. Not imported anywhere statically.
+ */
+
+@import '@syncfusion/ej2-base/styles/material3-dark.css';
+@import '@syncfusion/ej2-buttons/styles/material3-dark.css';
+@import '@syncfusion/ej2-splitbuttons/styles/material3-dark.css';
+@import '@syncfusion/ej2-inputs/styles/material3-dark.css';
+@import '@syncfusion/ej2-calendars/styles/material3-dark.css';
+@import '@syncfusion/ej2-dropdowns/styles/material3-dark.css';
+@import '@syncfusion/ej2-popups/styles/material3-dark.css';
+@import '@syncfusion/ej2-navigations/styles/material3-dark.css';
+@import '@syncfusion/ej2-lists/styles/material3-dark.css';
+@import '@syncfusion/ej2-ribbon/styles/material3-dark.css';
+@import '@syncfusion/ej2-grids/styles/material3-dark.css';
+@import '@syncfusion/ej2-documenteditor/styles/material3-dark.css';

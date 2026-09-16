@@ -1,0 +1,22 @@
+/**
+ * Centralized Syncfusion theme import (material3). Do not import Syncfusion
+ * component CSS anywhere else — everything routes through here so the theme
+ * stays a single source of truth (CLAUDE.md §3).
+ *
+ * Light is the always-loaded base. The dark variant lives in syncfusion-dark.css
+ * and is injected as a toggleable <link> by src/theme/useTheme.ts, so the manual
+ * sun/moon switch can restyle Syncfusion chrome even when it disagrees with the OS.
+ */
+
+@import '@syncfusion/ej2-base/styles/material3.css';
+@import '@syncfusion/ej2-buttons/styles/material3.css';
+@import '@syncfusion/ej2-splitbuttons/styles/material3.css';
+@import '@syncfusion/ej2-inputs/styles/material3.css';
+@import '@syncfusion/ej2-calendars/styles/material3.css';
+@import '@syncfusion/ej2-dropdowns/styles/material3.css';
+@import '@syncfusion/ej2-popups/styles/material3.css';
+@import '@syncfusion/ej2-navigations/styles/material3.css';
+@import '@syncfusion/ej2-lists/styles/material3.css';
+@import '@syncfusion/ej2-ribbon/styles/material3.css';
+@import '@syncfusion/ej2-grids/styles/material3.css';
+@import '@syncfusion/ej2-documenteditor/styles/material3.css';

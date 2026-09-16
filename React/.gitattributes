@@ -1,0 +1,18 @@
+# Normalize line endings for everything Git considers text, and store them as LF in the
+# repository regardless of what a given editor/OS checks out — avoids the class of "modified but
+# git diff shows nothing" noise that comes from a mixed CRLF/LF history.
+* text=auto eol=lf
+
+# Explicit binary declarations — belt-and-suspenders on top of text=auto's own content-based
+# detection, so these are never at risk of line-ending conversion.
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.pdf binary
+*.docx binary

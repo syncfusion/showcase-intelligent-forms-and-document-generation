@@ -1,0 +1,136 @@
+/**
+ * Design tokens — light theme is the source of truth on :root; dark overrides
+ * follow prefers-color-scheme. Field visual-state tokens (§10 CLAUDE.md) are
+ * defined once here and consumed by both the panel controls and in-doc shading.
+ */
+:root {
+  color-scheme: light;
+
+  /* Surfaces */
+  --bg: #f3f4f7;
+  --bg-canvas: #eceef3;
+  --surface: #ffffff;
+  --surface-raised: #ffffff;
+  --surface-glass: rgba(255, 255, 255, 0.72);
+  --border: #e2e4ea;
+  --border-strong: #c9ccd6;
+
+  /* Text */
+  --text: #14161c;
+  --text-muted: #5b5f6c;
+  --text-faint: #8b8f9c;
+
+  /* Brand / accent */
+  --accent: #4f46e5;
+  --accent-soft: #eef0fe;
+  --accent-contrast: #ffffff;
+
+  /* Field visual states */
+  --field-db-border: #4f46e5;
+  --field-db-bg: #eef0fe;
+  --field-db-text: #3730a3;
+
+  --field-user-border: #16a34a;
+  --field-user-bg: #eefbf2;
+  --field-user-text: #14532d;
+
+  --field-invalid-border: #dc2626;
+  --field-invalid-bg: #fef2f2;
+  --field-invalid-text: #991b1b;
+
+  /* Shadows */
+  --shadow-panel: 0 20px 60px -15px rgba(20, 22, 28, 0.25), 0 4px 16px -4px rgba(20, 22, 28, 0.12);
+  --shadow-card: 0 8px 24px -8px rgba(20, 22, 28, 0.14);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 150ms;
+  --dur-med: 260ms;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  /* Accent card colors used by template gallery (name-mapped, not literal) */
+  --accent-indigo: #4f46e5;
+  --accent-teal: #0d9488;
+  --accent-amber: #d97706;
+  --accent-rose: #e11d48;
+  --accent-slate: #475569;
+  --accent-sky: #0284c7;
+  --accent-violet: #7c3aed;
+  --accent-emerald: #059669;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+
+    --bg: #0f1116;
+    --bg-canvas: #14161c;
+    --surface: #1a1d24;
+    --surface-raised: #20232b;
+    --surface-glass: rgba(26, 29, 36, 0.78);
+    --border: #2a2d36;
+    --border-strong: #3a3e4a;
+
+    --text: #f2f3f6;
+    --text-muted: #a7abb8;
+    --text-faint: #767a87;
+
+    --accent: #818cf8;
+    --accent-soft: #262a45;
+    --accent-contrast: #121420;
+
+    --field-db-border: #818cf8;
+    --field-db-bg: #22243b;
+    --field-db-text: #c7cbfa;
+
+    --field-user-border: #4ade80;
+    --field-user-bg: #17281d;
+    --field-user-text: #b8f0c8;
+
+    --field-invalid-border: #f87171;
+    --field-invalid-bg: #2c1618;
+    --field-invalid-text: #fecaca;
+
+    --shadow-panel: 0 20px 60px -15px rgba(0, 0, 0, 0.6), 0 4px 16px -4px rgba(0, 0, 0, 0.4);
+    --shadow-card: 0 8px 24px -8px rgba(0, 0, 0, 0.5);
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #0f1116;
+  --bg-canvas: #14161c;
+  --surface: #1a1d24;
+  --surface-raised: #20232b;
+  --surface-glass: rgba(26, 29, 36, 0.78);
+  --border: #2a2d36;
+  --border-strong: #3a3e4a;
+
+  --text: #f2f3f6;
+  --text-muted: #a7abb8;
+  --text-faint: #767a87;
+
+  --accent: #818cf8;
+  --accent-soft: #262a45;
+  --accent-contrast: #121420;
+
+  --field-db-border: #818cf8;
+  --field-db-bg: #22243b;
+  --field-db-text: #c7cbfa;
+
+  --field-user-border: #4ade80;
+  --field-user-bg: #17281d;
+  --field-user-text: #b8f0c8;
+
+  --field-invalid-border: #f87171;
+  --field-invalid-bg: #2c1618;
+  --field-invalid-text: #fecaca;
+
+  --shadow-panel: 0 20px 60px -15px rgba(0, 0, 0, 0.6), 0 4px 16px -4px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 8px 24px -8px rgba(0, 0, 0, 0.5);
+}
